@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><center><table border="1px">
+        <h1>MongoExpress Crud</h1>
+    <% for(var i=0; i < response.length; i++){%> 
+        <tr >
+		<td><h3> Name :<%= response[i].name %></h3> </td>
+
+		<td><h4>Email :<%= response[i].email %></h4></td>
+
+		<td><h4>Password :<%= response[i].password %></h4></td>
+
+        <td><h4>SuperPower :<%= response[i].superpower %></h4></td>
+
+    </tr>
+		<% } %>
+    </center></table>
+</body>
+</html>
